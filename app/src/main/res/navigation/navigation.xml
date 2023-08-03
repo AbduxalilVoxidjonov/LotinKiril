@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homePage">
+
+    <fragment
+        android:id="@+id/homePage"
+        android:name="uc.team.lotinkiril.HomePage"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/homeToConvertText"
+            app:destination="@id/convertText" />
+    </fragment>
+    <fragment
+        android:id="@+id/convertText"
+        android:name="uc.team.lotinkiril.ConvertText"
+        android:label="fragment_convert_text"
+        tools:layout="@layout/fragment_convert_text" />
+</navigation>
